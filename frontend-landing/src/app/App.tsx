@@ -1,6 +1,8 @@
 import Slider from "react-slick";
 import { useArt, useFaq, useTooltip } from "./hooks";
 import { SliderArrow, CopyIcon } from "./components";
+import DogImage from "../assets/images/image.png";
+import BgImage from "../assets/images/bg.png";
 import {
   PhoneImg,
   DollarImg,
@@ -61,6 +63,10 @@ function App() {
       <div id="content" className="container-xxl px-0">
         <div id="home" className="container-fluid">
           <div className="home-container container-fluid p-lg-0 h-100">
+            <div className="home-background">
+              <img className="home-bg" src={BgImage} alt="background" />
+              <img className="home-logo" src={DogImage} alt="dog logo" />
+            </div>
             <div className="container-fluid h-100">
               <div className="row h-100">
                 <div className="col col-lg-7 px-0">
